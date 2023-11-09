@@ -1,0 +1,18 @@
+.container{
+    border: 1px solid salmon;
+    width: 500px;
+    height: 400px;
+    padding: 40px;
+}
+.container .box{
+    border: 1px solid red;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+.container .box.type-1{
+    border-color: green;
+}
+.container .box.type-2{
+    border-color: blue;
+}

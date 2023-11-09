@@ -1,0 +1,20 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+form label{
+    color: blueviolet;
+    font-weight: bold;
+}
+form button{
+    background-color:yellowgreen;
+    color: white;
+    border-radius:10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+}
+button:hover{
+    background-color: violet;
+}

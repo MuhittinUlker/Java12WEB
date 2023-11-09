@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #header{
+            /*border-style: solid;
+            border-color: blue;
+            border-width: 2px;*/
+            border: 2px solid blue;
+            margin-bottom: 5px;
+        }
+        #menu{
+            border: 2px solid rgb(255, 132, 0);
+            /*padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 5px;*/
+            padding: 2px; /*border ile element arasi boslklar icin*/
+            margin-top: 10px; /*borderlar arasi bosluk icin*/
+            margin-bottom: 10px;
+            display: inline-block;
+            width: 20%;
+            
+        }
+        #blogs{
+           border: 2px solid rgb(162, 30, 210);
+           display: inline-block;
+           width: 75%;
+        }
+        #footer{
+           border: 2px solid green;
+        }
+    </style>
+</head>
+<body>
+    <b> Oge1 </b>
+    <b> Oge2 </b>
+         <!-- Yorum satiri-->
+    <div id="header">
+           <h1>MAKALE BASLIGI</h1>
+           <p>Paragraf Etiketi</p>
+           <span style="background-color: bisque;">Bu bir inline-level elementtir.</span> 
+           <span style="color:blue">Bu element alt satira atmaz</span>          
+    </div>
+    <div id="menu">
+            MENU
+    </div>
+    <div id="blogs">
+            <h3>Inline Level Tagler</h3>
+            <div>
+                <label>Ad-Soyad:</label><br>
+                <input type="text">
+            </div>
+            <div>
+                <label>Telefon:</label><br>
+                <input type="text">
+            </div>
+           <div>
+                <label>Adres:</label><br>
+                <input type="text">
+           </div>
+           <h3>Block Level Tagler</h3>
+           <p>Paragraflar bir block olusturur</p>
+           <div>divler de blok elementtir</div>
+
+    </div>
+    <div id="footer">
+            FOOTER
+    </div>
+</body>
+</html>

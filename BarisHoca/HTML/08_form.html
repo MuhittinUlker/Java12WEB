@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin-bottom: 5px;
+        }
+        label{
+            display: inline-block;
+            font-size: 16px;
+            font-family:monospace;
+            width: 150px;
+        }
+        .sehir{
+            padding: 10px;
+            width: 200px;
+            font-size: 16px;
+            font-family: cursive;
+            border-color: blue;
+        }
+        .formGiris{
+            border: 2px solid salmon;
+            padding: 10px;
+            width: 550px;
+            background-color: antiquewhite;
+        }
+        .arkaplanpembe{
+            background-color: pink;
+        }
+        button{
+            margin-top: 20px;
+            width: 150px;
+            height: 40px;
+            background-color:bisque;
+            border-radius: 15px;
+            border-color: blueviolet;
+        }
+        button:hover{
+            background-color: blueviolet;
+            border-color: bisque;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <form action="register.html">
+        <div class="formGiris arkaplanpembe">
+            <label for="formad"> Kullanici Adi: </label>
+            <input name="formad" id="fromad" type="text" required>
+        </div>
+        <div class="formGiris">
+            <label for="formsifre"> Sifre: </label>
+            <input name="formsifre" id="fromsifre" type="password">
+        </div>
+        <div class="formGiris">
+            <label for="formemail"> Email: </label>
+            <input name="formemail" id="fromemail" type="email">
+        </div>
+        <div class="arkaplanpembe formGiris">
+            <label for="formadres"> Adres: </label>
+            <textarea name="formadres" id="formadres" cols="22" rows="8"></textarea>
+        </div>
+        <div class="formGiris">
+            <p>Yas araliginiz?</p>
+            <input type="radio" name="formyas" id="formyas1">
+            <label for="formyas">10-20</label>
+            <input type="radio" name="formyas" id="formyas2">
+            <label for="formyas">21-40</label>
+            <input type="radio" name="formyas" id="formyas3">
+            <label for="formyas">41-60</label>
+        </div>
+        <div class="formGiris arkaplanpembe">
+            <p>Hangi teknolojileri biliyorsunuz?</p>
+            <input type="checkbox" name="formkonuhibernate" id="formkonu1">
+            <label for="formkonu1">Hibernate</label>
+            <input type="checkbox" name="formkonu" id="formkonu1">
+            <label for="formkonuJDBC">JDBC</label>
+            <input type="checkbox" name="formkonuspring" id="formkonu1">
+            <label for="formkonu1">Spring</label>
+        </div>
+        <div class="formGiris">
+            <p class="sehir">Sehir Seciniz:</p>
+            <select class="sehir" name="sehir" id="sehir">
+            <option>Seciniz</option>
+            <option value="1">Adana</option>
+            <option value="6">Ankara</option>
+            <option value="34">Istanbul</option>
+        </select>
+        </div>
+        <div class="sehir">
+            <p>Dogum Tarihi:</p>
+            <input type="date" name="formdt" id="formdt">
+        </div>
+        <div>
+            <button type="submit" id="kaydetbutton">KAYDET</button>
+            <button type="reset">RESETLE</button>
+        </div>
+    </form>
+</body>
+</html>

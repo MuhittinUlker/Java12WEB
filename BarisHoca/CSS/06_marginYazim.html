@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            /* 4 taraftan esit margin icin */
+            margin: 50px;
+            /* Her taraf icin ayri margin vermek icin */
+            margin-top: 50px;
+            margin-right: 50px;
+            margin-bottom: 50px;
+            margin-left: 50px;
+            /* Her taraf icin tek satirda farkli margin icin */
+            /*      top   right  bottom  left      */
+            margin: 50px  20px   150px   50px;
+            /*     top-bottom  right-left*/        
+            margin:   20px        50px;
+            /*       T     R-L        B */
+            margin: 20px   30px     50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+</html>
